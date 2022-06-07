@@ -2,6 +2,7 @@
     --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont,
         "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
 }
 
 *,
@@ -219,7 +220,7 @@ h1,
     top: 0;
     bottom: 0;
     overflow: auto;
-    background-color:#836953   ;
+    background-color:#182254 ;
 }
 
 .dashboard-compact .dashboard-nav {
@@ -249,14 +250,11 @@ h1,
 }
 
 .dashboard-nav a {
-    color: #515151;
+    color: #f8f9fd;
 }
 
 .dashboard-nav a:hover {
     text-decoration: none;
-}
-.dashboard-nav a {
-    color: rgb(62, 7, 7);
 }
 
 .brand-logo {
@@ -267,7 +265,7 @@ h1,
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    color: #515151;
+    color: #000000;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
@@ -297,7 +295,7 @@ h1,
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    background-color: ;
+    background-color:#182254;
 }
 
 .dashboard-nav-item {
@@ -438,8 +436,8 @@ h1,
 }
 
 .dashboard-toolbar {
-    min-height: 84px;
-    background-color: #fff;
+    height: 56px;
+    background-color: #182254;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -527,19 +525,19 @@ h1,
     width: 18rem;
      border-radius: 6px;
      height: 14rem;
-    background-color:#F14658; 
+    background-color:#c31837; 
 }
 .component-booking{
     width: 18rem;
      border-radius: 6px;
      height: 14rem;
-     background-color:	#FFFF99;
+     background-color:	#febd41;
 }
 .component-valid{
     width: 18rem;
      border-radius: 6px;
      height: 14rem;
-     background-color: #73eecc;
+     background-color: #60a4bd;
 }
 /*end*/
 /*button for modal*/
@@ -547,6 +545,14 @@ h1,
     width: 50%;
      height:50%;
     margin:auto;
+}
+.button-modal{
+     height:50%;
+    margin:auto;
+}
+.button-all{
+    width: 80px;
+    height: 35px;
 }
 /* style for table */
 table td {
@@ -574,3 +580,37 @@ table td {
   select[type=edt-select]{
     border:0px solid #fff;
   }
+ .list-inline-item-button{
+    background-color: #fff;
+  }
+  .sts-button{
+      width: 20%;
+  }
+  .tr-edt{
+      max-width: 100%;
+  }
+  .td-edt-room{
+      width: 25%;
+  }
+ .td-edt-type-services{
+     width: 37%;
+ }
+ .td-edt-product{
+     width: 17%;
+ }
+.sts-button-product{
+    width: 12%;
+}
+.td-edt-services{
+width: 20%;
+}
+.td-edt-services-sts{
+    width: 15%;
+}
+/*css dashboard*/
+.navbar{
+    display: none;
+}
+
+
+/*end*/

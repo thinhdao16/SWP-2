@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <!-- 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="select-1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="//bizweb.dktcdn.net/100/331/067/themes/862373/assets/favicon.png?1654038892299"
+        type="image/x-icon">
+    <!-- <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Loại phòng</title>
+    <script src="style.js"></script>
+</head>
+
+<body>
+    <div class='dashboard'>
+        <div class="dashboard-nav">
+            <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="./Main.html"
+                    class="brand-logo"><i class="fas fa-anchor"></i> <span>MENU</span></a></header>
+            <nav class="dashboard-nav-list">
+                <div class='dashboard-nav-dropdown'><a href="./setListRoom.html"
+                        class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i class="fas fa-users"></i> PRODUCT
+                    </a>
+                </div>
+                <div class='dashboard-nav-dropdown'><a href="./edtServices.html"
+                        class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i
+                            class="fas fa-money-check-alt"></i>SERVICES</a>
+                </div>
+                <a  href="#" class="dashboard-nav-item" data-bs-toggle="modal" data-bs-target="#exampleCheckoutModal"><i
+                        class="far fa-check-circle"></i>CHECK OUT</a>
+                <a href="./typeRoom.html" class="dashboard-nav-item"><i class="fas fa-user"></i> Type Room </a>
+                <a href="./typeServices.html" class="dashboard-nav-item"><i class="fas fa-user"></i> Type SERVICES </a>
+                <div class="nav-item-divider"></div>
+                <a href="./error.html" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
+            </nav>
+
+        </div> 
+
+
+        <!-- RightRoomStatus -->
+        <div class='dashboard-app'>
+            <header class='dashboard-toolbar'><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a></header>
+            <div class='dashboard-content'>
+                <div class="row d-flex justify-content-center">
+                    <div class="mt-3 mb-3 col-sm-3 col-12 ">
+                        <h3>CHỖ NÀY CÓ CẦN?</h3>
+                    </div>
+                </div>
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="card bg-light">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <nav class="navbar navbar-light bg-light">
+                                            <h1 class="navbar-brand">THIẾT LẬP DANH MỤC SẢN PHẨM <i
+                                                    class="far fa-list-alt"></i></h1>
+                                            <form class="form-inline">
+                                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                                    aria-label="Search">
+                                                <button class="btn btn-outline-success my-2 my-sm-0"
+                                                    type="submit">Search</button>
+                                            </form>
+                                        </nav>
+                                    </div>
+                                    <div class="row">
+                                        <table class="table table-bordered">
+                                            <thead class="thead-light text-center">
+                                                <tr>
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">Tên Phòng</th>
+                                                    <th scope="col">Giá</th>
+                                                    <th scope="col">Ghi Chú</th>
+                                                    <th scope="col">Status</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="list-group-horizontal text-center">
+                                                <tr class="tr-edt">
+                                                    <th scope="row">1 </th>
+                                                    <td class="td-edt-room">
+                                                        <input type="text1" class="input-group"></td>
+                                                    <td class="td-edt-room"><input dir="rtl" type="text1"
+                                                            class="input-group " placeholder="vnđ"></td>
+                                                    <td class="td-edt-room"><input type="text1" class="input-group  "></td>
+                                                    <td class="sts-button">
+                                                        <ul class="list-inline m-0 ">
+                                                            <li class="list-inline-item ">
+                                                                <button class="btn btn-primary btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Add"><i
+                                                                        class="fa fa-table"></i></button>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <button class="btn btn-success btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Edit"><i
+                                                                        class="fa fa-edit"></i></button>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <button class="btn btn-danger btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Delete"><i
+                                                                        class="fa fa-trash"></i></button>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+
+                                                <tr class="tr-edt">
+                                                    <th scope="row">2 </th>
+                                                    <td class="td-edt-room">
+                                                        <input type="text1" class="input-group"></td>
+                                                    <td class="td-edt-room"><input dir="rtl" type="text1"
+                                                            class="input-group " placeholder="vnđ"></td>
+                                                    <td class="td-edt-room"><input type="text1" class="input-group  "></td>
+                                                    <td class="sts-button">
+                                                        <ul class="list-inline m-0 ">
+                                                            <li class="list-inline-item ">
+                                                                <button class="btn btn-primary btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Add"><i
+                                                                        class="fa fa-table"></i></button>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <button class="btn btn-success btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Edit"><i
+                                                                        class="fa fa-edit"></i></button>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <button class="btn btn-danger btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Delete"><i
+                                                                        class="fa fa-trash"></i></button>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tr-edt">
+                                                    <th scope="row">3 </th>
+                                                    <td class="td-edt-room">
+                                                        <input type="text1" class="input-group"></td>
+                                                    <td class="td-edt-room"><input dir="rtl" type="text1"
+                                                            class="input-group " placeholder="vnđ"></td>
+                                                    <td class="td-edt-room"><input type="text1" class="input-group  "></td>
+                                                    <td class="sts-button">
+                                                        <ul class="list-inline m-0 ">
+                                                            <li class="list-inline-item ">
+                                                                <button class="btn btn-primary btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Add"><i
+                                                                        class="fa fa-table"></i></button>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <button class="btn btn-success btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Edit"><i
+                                                                        class="fa fa-edit"></i></button>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <button class="btn btn-danger btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Delete"><i
+                                                                        class="fa fa-trash"></i></button>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tr-edt">
+                                                    <th scope="row">4 </th>
+                                                    <td class="td-edt-room">
+                                                        <input type="text1" class="input-group"></td>
+                                                    <td class="td-edt-room"><input dir="rtl" type="text1"
+                                                            class="input-group " placeholder="vnđ"></td>
+                                                    <td class="td-edt-room"><input type="text1" class="input-group  "></td>
+                                                    <td class="sts-button">
+                                                        <ul class="list-inline m-0 ">
+                                                            <li class="list-inline-item ">
+                                                                <button class="btn btn-primary btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Add"><i
+                                                                        class="fa fa-table"></i></button>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <button class="btn btn-success btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Edit"><i
+                                                                        class="fa fa-edit"></i></button>
+                                                            </li>
+                                                            <li class="list-inline-item">
+                                                                <button class="btn btn-danger btn-sm rounded-0"
+                                                                    type="button" data-toggle="tooltip"
+                                                                    data-placement="top" title="Delete"><i
+                                                                        class="fa fa-trash"></i></button>
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="button-modal-right float-right">
+                                        <button type="button" class="btn btn-primary  button-all" data-bs-dismiss="modal">SAVE</button>
+                                        <button type="submit" class="btn btn-danger button-all">CANCEL</button>
+                                      
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+    </script>
+    <!-- Always remember to call the above files first before calling the bootstrap.min.js file -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+        integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
+<!--end check out-->
+<!-- <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous">
+</script>
+<!-- Always remember to call the above files first before calling the bootstrap.min.js file -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+</script>
+</body>
+
+</html>
