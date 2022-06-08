@@ -269,6 +269,7 @@ h1,
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    text-decoration:none;
 }
 
 .brand-logo:focus,
@@ -279,7 +280,7 @@ h1,
 }
 
 .brand-logo i {
-    color: rgb(62, 7, 7);
+    color: #ffff;
     font-size: 27px;
     margin-right: 10px;
 }
@@ -310,6 +311,7 @@ h1,
     align-items: center;
     letter-spacing: 0.02em;
     transition: ease-out 0.5s;
+    text-decoration: none;
 }
 
 .dashboard-nav-item i {
