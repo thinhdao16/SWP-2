@@ -553,6 +553,30 @@ background-blend-mode: screen, color-dodge, overlay, difference, normal; */
 }
 
 /*end css nav*/
+/*css head main nav*/
+.search-head-main-many{
+    border: 2px solid #e8e8e8;
+    padding: 0 16px 0 8px;
+    border-radius: 20px;
+    width: 420px;
+}
+.dropdown-menu-head-main{
+    border-radius: 10px !important;
+    box-shadow: 0 -4px 32px rgb(0 0 0 / 20%);
+}
+.UserMenu_avatar__BwHLQ {
+    border-radius: 50%;
+    height: 50px;
+    object-fit: cover;
+    width: 50px;
+}
+.UserMenu_avatar__BwHLQ_focus {
+    border-radius: 50%;
+    height: 30px;
+    object-fit: cover;
+    width: 30px;
+}
+/*end*/
 /*button for modal*/
 .button-modal {
     width: 50%;
@@ -709,7 +733,7 @@ a[type=btn-google]:focus {
 }
 
 .click-face-cpn-booking {
-    background: #e1d175;
+   background-image: linear-gradient(75deg, #FAE17C, #fdeba4);
     color: white;
     border: 0;
     border-radius: 5px;
@@ -717,6 +741,7 @@ a[type=btn-google]:focus {
     text-shadow: none;
     width: 86px;
     height: 35px;
+
 }
 
 .click-face-cpn-booking:hover {
@@ -728,6 +753,7 @@ a[type=btn-google]:focus {
     text-shadow: none;
     height: 35px;
     width: 86px;
+    transition: 0.1s 0.2s;
 }
 .click-face-cpn-unvalid {
     background: #ed6969;
@@ -749,6 +775,7 @@ a[type=btn-google]:focus {
     text-shadow: none;
     height: 35px;
     width: 86px;
+    transition: 0.1s 0.2s;
 }
 
 .click-face-cpn-valid {
@@ -771,6 +798,7 @@ a[type=btn-google]:focus {
     text-shadow: none;
     height: 35px;
     width: 86px;
+    transition: 0.1s 0.2s;
 }
 
 
@@ -882,7 +910,7 @@ a[type=btn-google]:focus {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #e1d175;
+    background-image: linear-gradient(75deg, #FAE17C, #fdeba4);
     border-radius: 25px 25px 0 25px;
   }
   .overlay-booking::before,
@@ -893,7 +921,7 @@ a[type=btn-google]:focus {
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: #e1d175;
+    background-color: #fdeba4;
   }
   .overlay-booking::after{
     border-radius: 0 25px 0 0;
@@ -1097,3 +1125,114 @@ a[type=btn-google]:focus {
     cursor: pointer;
 }
 /*end*/
+/*nav head*/
+.nav-font-main{
+    border-bottom: 1px solid #e8ebed;
+    height: 70px;
+    padding: 0 28px;
+}
+/*end*/
+  .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 30px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+  /*end*/
+  .breadcrumbs {
+    border: 1px solid #cbd2d9;
+    border-radius: 0.3rem;
+    display: inline-flex;
+    overflow: hidden;
+  }
+  
+  .breadcrumbs__item {
+    background: #fff;
+    color: #333;
+    outline: none;
+    padding: 0.75em 0.75em 0.75em 1.25em;
+    position: relative;
+    text-decoration: none;
+    transition: background 0.2s linear;
+  }
+  
+  .breadcrumbs__item:hover:after,
+  .breadcrumbs__item:hover {
+    background: #edf1f5;
+  }
+  
+  .breadcrumbs__item:focus:after,
+  .breadcrumbs__item:focus,
+  .breadcrumbs__item.is-active:focus {
+    background: #323f4a;
+    color: #fff;
+  }
+  
+  .breadcrumbs__item:after,
+  .breadcrumbs__item:before {
+    background: white;
+    bottom: 0;
+    clip-path: polygon(50% 50%, -50% -50%, 0 100%);
+    content: "";
+    left: 100%;
+    position: absolute;
+    top: 0;
+    transition: background 0.2s linear;
+    width: 1em;
+    z-index: 1;
+  }
+  
+  .breadcrumbs__item:before {
+    background: #cbd2d9;
+    margin-left: 1px;
+  }
+  
+  .breadcrumbs__item:last-child {
+    border-right: none;
+  }
+  
+  .breadcrumbs__item.is-active {
+    background: #edf1f5;
+  }
+  .is-active ::after {
+    background: #edf1f5;
+  }
+  .is-active ::before {
+    background: #edf1f5;
+  }
+  
+  /* Some styles to make the page look a little nicer */
+  /* body {
+    color: #323f4a;
+    background: #f5f7fa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
+  
+  html, body {
+    height: 100%;
+  } */
