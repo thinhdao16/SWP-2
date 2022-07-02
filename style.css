@@ -751,7 +751,7 @@ a[type=btn-google]:focus {
 }
 
 .click-face-cpn-booking {
-   background-image: linear-gradient(75deg, #FAE17C, #fdeba4);
+   background-color: #fada5e;
     color: white;
     border: 0;
     border-radius: 5px;
@@ -797,7 +797,7 @@ a[type=btn-google]:focus {
 }
 
 .click-face-cpn-valid {
-    background: #94e298;
+    background: #66cdaa;
     color: rgb(255, 255, 255);
     border: 0;
     border-radius: 5px;
@@ -810,7 +810,7 @@ a[type=btn-google]:focus {
 .click-face-cpn-valid:hover {
     background-color: white;
     color: black;
-    border: 2px solid #94e298;
+    border: 2px solid #66cdaa;
     border-radius: 5px;
     box-shadow: 3px #eee;
     text-shadow: none;
@@ -836,7 +836,7 @@ a[type=btn-google]:focus {
     height: 75px;
     width: 75px;
     border-radius: 5px;
-    background-color: #94e298;
+    background-color: #66cdaa;
 }
 
 .sm-cpn-pay-3 {
@@ -880,7 +880,7 @@ a[type=btn-google]:focus {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #94e298;
+    background-color: #66cdaa;
     border-radius: 25px 25px 0 25px;
   }
   .overlay-valid::before,
@@ -891,7 +891,7 @@ a[type=btn-google]:focus {
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: #94e298;
+    background-color: #66cdaa;
   }
   .overlay-valid::after{
     border-radius: 0 25px 0 0;
@@ -928,7 +928,7 @@ a[type=btn-google]:focus {
     top: 0;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(75deg, #FAE17C, #fdeba4);
+    background-color: #fada5e;
     border-radius: 25px 25px 0 25px;
   }
   .overlay-booking::before,
@@ -939,7 +939,7 @@ a[type=btn-google]:focus {
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: #fdeba4;
+    background-color: #fada5e;
   }
   .overlay-booking::after{
     border-radius: 0 25px 0 0;
