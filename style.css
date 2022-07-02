@@ -751,7 +751,7 @@ a[type=btn-google]:focus {
 }
 
 .click-face-cpn-booking {
-   background-color: #fada5e;
+   background-color: #FADA77;
     color: white;
     border: 0;
     border-radius: 5px;
@@ -928,7 +928,7 @@ a[type=btn-google]:focus {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: #fada5e;
+    background-color: #FADA77;
     border-radius: 25px 25px 0 25px;
   }
   .overlay-booking::before,
@@ -939,7 +939,7 @@ a[type=btn-google]:focus {
     bottom: -40px;
     height: 40px;
     width: 40px;
-    background-color: #fada5e;
+    background-color: #FADA77;
   }
   .overlay-booking::after{
     border-radius: 0 25px 0 0;
