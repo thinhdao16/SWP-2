@@ -1,0 +1,30 @@
+.page-title-overlap{
+    padding-bottom: 6.375rem;
+    background-color: #f6f9fc ;
+    
+}
+.page-title-overlap + * {
+    position: relative;
+    margin-top: -4.875rem;
+    z-index: 5;
+}
+.cz-sidebar-static{
+    padding: 1.875rem 1.875rem;
+    width: 100%;
+    max-width: 22rem !important;
+    background-color: #fff; 
+}
+a{
+    text-decoration: none !important;
+}
+.media-body{
+    flex: 1;
+}
+.media-profile{
+    display: flex;
+    align-items: flex-start;
+    max-width: 302px !important;
+}
+.font-size-bases{
+    font-size: 1rem ;
+}
