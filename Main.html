@@ -21,10 +21,18 @@
             <header><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a><a href="./Main.html"
                     class="brand-logo"><i class="fa-thin fa-house"></i><span>MENU</span></a></header>
             <nav class="dashboard-nav-list">
-                <div class='dashboard-nav-dropdown'><a href="./setListRoom.html"
+                <div class='dashboard-nav-dropdown'><a href="" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
                         class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i class="fas fa-users me-2"></i>
                         PRODUCT
                     </a>
+                    <div class="collapse" id="dashboard-collapse" style="">
+                        <ul class="btn-toggle-nav list-unstyled fw-normal">
+                          <li><a href="./setListRoom.html"
+                              class="dashboard-nav-item"> 
+                              product
+                          </a></li>
+                        </ul>
+                      </div>
                 </div>
                 <div class='dashboard-nav-dropdown'><a href="./edtServices.html"
                         class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i
@@ -36,8 +44,24 @@
                 <a href="./typeServices.html" class="dashboard-nav-item"><i class="fas fa-user me-2"></i> Type SERVICES
                 </a>
                 <a href="./payment.html" class="dashboard-nav-item"><i class="fas fa-user me-2"></i> Payment </a>
+                                <!--them booking 13/7/2022-->
+                                <div class='dashboard-nav-dropdown'><a href="" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse-booking"
+                                    class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i class="fas fa-users me-2"></i>
+                                    BOOKING
+                                </a>
+                                <div class="collapse" id="dashboard-collapse-booking" style="">
+                                    <ul class="btn-toggle-nav list-unstyled fw-normal">
+                                      <li><a href="./booking.html"
+                                          class="dashboard-nav-item"> 
+                                          booking
+                                      </a></li>
+                                    </ul>
+                                  </div>
+                            </div>
+                            <!--end booking 13/7/2022-->
                 <div class="nav-item-divider"></div>
                 <a href="./error.html" class="dashboard-nav-item"><i class="fas fa-sign-out-alt me-2"></i> Logout </a>
+
             </nav>
 
         </div>

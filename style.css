@@ -345,7 +345,6 @@ background-blend-mode: screen, color-dodge, overlay, difference, normal; */
     flex-direction: column;
     background-color: #182254;
 }
-
 .dashboard-nav-item {
     min-height: 56px;
     padding: 8px 20px 8px 70px;
@@ -1367,3 +1366,51 @@ color: rgb(36, 46, 48);
     height: 35px;
     width: 86px;
 }
+/*them*/
+.button-profile-edit-booking {
+    background-color:#ffffff ;
+     
+     border: 1px solid #7EBB8E ;
+     border-radius: 5px;
+     box-shadow: 3px ;
+     text-shadow: none;
+     width: 86px;
+     height: 35px;
+    
+ }
+ 
+ .button-profile-edit-booking:hover {
+     background-image:linear-gradient(75deg, #7EBB8E, #567c60);
+     
+     border: 0px;
+     border-radius: 5px;
+     box-shadow: 3px ;
+     text-shadow: none;
+     height: 35px;
+     width: 86px;
+    
+ }
+ .button-profile-edit-booking a{
+    text-decoration: none !important;
+    color: #7EBB8E !important;
+    
+ }
+ .button-profile-edit-booking:hover{
+    color: white !important;
+ }
+ .img-booking-chg{
+    margin-left: -16px;
+ }
+ .booking-text-chg-imp{
+    font-weight: 400;
+ }
+ .booking-text-chg-imp-1{
+    font-weight: 600;
+ }
+ .booking-col-e-chg{
+    margin-left: -10px;
+ }
+ .booking-chg-col-e-btn{
+    margin-left: -56px;
+ }
+/*end*/
