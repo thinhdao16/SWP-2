@@ -1444,3 +1444,21 @@ color: rgb(67, 57, 57) !important ;
     color: rgb(127, 85, 85) !important;
 }
 /*end*/
+/*them 15/7/2022*/
+.cus-profile-book-card{
+    max-width: 325px;height: 380px;
+}
+.cus-profile-book-card .card-body{
+    border-radius: 20px;
+    padding: 2.75rem 2rem 0 2rem;
+}
+.cus-profile-book-card .card-body .text-center img{
+    width: 90px; height: 90px; border-radius: 50%;
+}
+.cus-profile-book-card .card-body .text-center label{
+    font-weight: 600;
+}
+.cus-profile-book-card .card-body  label img{
+    height:20px ; width: 20px;
+}
+/*end*/
