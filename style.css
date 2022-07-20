@@ -199,7 +199,7 @@ h1,
 }
 
 /*end  css nav-status*/
-.card {
+/* .card {
     position: relative;
     display: -webkit-box;
     display: -webkit-flex;
@@ -216,7 +216,7 @@ h1,
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
     border-radius: 0;
-}
+} */
 
 .card-body {
     -webkit-box-flex: 1;
@@ -874,12 +874,22 @@ a[type=btn-google]:focus {
 /*card*/
 .card-try-2 {
     border-radius: 25px !important;
-    background-color: #FFF !important;
-    overflow: hidden;
+    background-color: #FFF ;
     width: 288px;
     height: 228px;
+    /*thêm ở đây 21/7/2022 nhớ xóa shadow của card  */
+    animation: mymove 2s;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
 }
-
+@keyframes mymove {
+    0% {
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+   }
+   100% {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 14px 28px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+   }
+ }
+ /*end*/
 .image-content,
 .card-content {
     display: flex;
@@ -1765,7 +1775,6 @@ a[type=btn-google]:focus {
     color: white !important;
     transform: translateY(-5px);
 }
-
 .banner-another .row .shadow .fa-thin {
     color: #fea116;
     font-size: 38px
@@ -1814,4 +1823,7 @@ a[type=btn-google]:focus {
 .banner-another button:hover::before {
     clip-path: inset(0 0 0 0);
 }
+/*end*/
+/*them 20/7/2022*/
+
 /*end*/
