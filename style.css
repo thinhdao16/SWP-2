@@ -874,22 +874,25 @@ a[type=btn-google]:focus {
 /*card*/
 .card-try-2 {
     border-radius: 25px !important;
-    background-color: #FFF ;
+    background-color: #FFF;
     width: 288px;
     height: 228px;
     /*thêm ở đây 21/7/2022 nhớ xóa shadow của card  */
     animation: mymove 2s;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
+
 @keyframes mymove {
     0% {
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
-   }
-   100% {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 14px 28px -5px, rgba(0, 0, 0, 0.3) 0px 9px 17px -9px;
-   }
- }
- /*end*/
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+    }
+
+    100% {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 14px 28px -5px, rgba(0, 0, 0, 0.3) 0px 9px 17px -9px;
+    }
+}
+
+/*end*/
 .image-content,
 .card-content {
     display: flex;
@@ -1775,6 +1778,7 @@ a[type=btn-google]:focus {
     color: white !important;
     transform: translateY(-5px);
 }
+
 .banner-another .row .shadow .fa-thin {
     color: #fea116;
     font-size: 38px
@@ -1823,7 +1827,109 @@ a[type=btn-google]:focus {
 .banner-another button:hover::before {
     clip-path: inset(0 0 0 0);
 }
+
 /*end*/
 /*them 20/7/2022*/
+
+/*end*/
+/*them 30/7/2022*/
+.re-modal-content-next-gg {
+    border-radius: 15px !important;
+}
+
+.re-modal-content-next-gg .modal-body .row .col .card {
+    font-family: noto serif, serif !important;
+    margin-top: -13px !important;
+}
+
+.re-modal-content-next-gg .modal-body .row .col .card .card-body .row {
+    padding: 0 4rem 0 2.5rem;
+    margin-bottom: 14px;
+}
+
+.re-modal-content-next-gg .modal-body .row .col .card .card-body .row img {
+    width: 51px;
+    border-radius: 50%;
+}
+
+.re-modal-content-next-gg .modal-body .row .col .card .card-body .row i {
+    color: rgb(214 209 209);
+    padding: 14px;
+    font-size: 22px;
+}
+
+.re-modal-content-next-gg .modal-body .row .col .card .card-body .hr {
+    padding-left: 74px;
+}
+
+.re-modal-content-next-gg .modal-body .row .col .card .card-body .hr hr {
+    max-width: 87px;
+    color: #544837;
+    font-size: 4px;
+}
+
+.re-login-modal-next-acpt {
+    font-weight: 500 !important;
+    font-size: 1.1rem !important;
+    background-color: #fea116;
+    color: #ffffff;
+    padding: 5px;
+    transform: perspective(1px) translateZ(0);
+    border-radius: 8px;
+    transition: 0.6s;
+}
+
+.re-login-modal-next-acpt:hover {
+    color: white;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.6);
+    transform: translateY(-5px);
+    opacity: 0.8;
+}
+
+.re-login-modal-next-acpt::before {
+    position: absolute;
+    z-index: -1;
+    background-color: #503814;
+    clip-path: inset(0 100% 0 0);
+    opacity: 1;
+    transition: 0.4s;
+    content: "";
+    top: 0px;
+    left: 0px;
+    right: -0.5px;
+    bottom: -1px;
+    border-radius: 8px;
+}
+
+.re-login-modal-next-acpt:hover::before {
+    clip-path: inset(0 0 0 0);
+}
+
+.re-login-modal-next-acpt a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.re-pricing-card-title-txt {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: -5px;
+}
+
+.re-modal-last-out {
+    color: #fea116;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.re-modal-last-out:hover {
+    color: #471e15;
+    text-decoration: none;
+}
+
+.star-login-gg {
+    color: #fea116;
+}
 
 /*end*/
